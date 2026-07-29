@@ -38,12 +38,31 @@ A web-based Student Management System developed using PHP and MySQL. It helps ma
 
 ## 📸 Screenshots
 
-Screenshot 2026-07-30 003903.png
-Screenshot 2026-07-30 003903.png
-Screenshot 2026-07-30 003903.png
-Screenshot 2026-07-30 003903.png
-Screenshot 2026-07-30 003903.png
-Screenshot 2026-07-30 003903.png
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](<Screenshot 2026-07-30 003635.png>)
+
+### Admin Dashboard
+
+![Admin Dashboard](<Screenshot 2026-07-30 003729.png>)
+
+### Student Management
+
+![Student Management](<Screenshot 2026-07-30 003745.png>)
+
+### Internal Marks Management
+
+![Internal Marks Management](<Screenshot 2026-07-30 003800.png>)
+
+### Student Marks Report
+
+![Student Marks Report](<Screenshot 2026-07-30 003822.png>)
+
+### Room Details
+
+![Room Details](<Screenshot 2026-07-30 003903.png>)
 
 ## 👩‍💻 Author
 
