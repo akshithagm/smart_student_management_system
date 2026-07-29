@@ -38,7 +38,12 @@ A web-based Student Management System developed using PHP and MySQL. It helps ma
 
 ## 📸 Screenshots
 
-Project screenshots will be added soon.
+Screenshot 2026-07-30 003903.png
+Screenshot 2026-07-30 003903.png
+Screenshot 2026-07-30 003903.png
+Screenshot 2026-07-30 003903.png
+Screenshot 2026-07-30 003903.png
+Screenshot 2026-07-30 003903.png
 
 ## 👩‍💻 Author
 
