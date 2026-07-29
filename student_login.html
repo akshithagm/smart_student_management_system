@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="student-login-page">
+
+<header class="student-login-hero">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Smart Student Management System</h2>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student_register.html">Register</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="student-login-container">
+
+        <div class="student-login-intro">
+
+            <p class="student-login-label">
+                <i class="fa-solid fa-user-graduate"></i>
+                Student Portal
+            </p>
+
+            <h1>Welcome Back,<br>Future Professional</h1>
+
+            <p class="student-login-description">
+                Log in using your generated Student ID and password
+                to access your personal dashboard, profile, room
+                allocation and academic information.
+            </p>
+
+            <div class="student-login-benefits">
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Secure student access
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Personal dashboard
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Dynamic student profile
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Room and report access
+                </p>
+
+            </div>
+
+            <a href="index.html" class="student-login-back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home
+            </a>
+
+        </div>
+
+        <div class="student-login-panel">
+
+            <div class="student-login-panel-heading">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+
+                <div>
+                    <h2>Student Login</h2>
+                    <p>Enter your Student ID and password.</p>
+                </div>
+
+            </div>
+
+            <form action="student_login.php"
+                  method="POST"
+                  class="student-login-form">
+
+                <div class="student-login-field">
+
+                    <label for="student_id">Student ID</label>
+
+                    <input
+                        type="text"
+                        id="student_id"
+                        name="student_id"
+                        placeholder="Example: STU001"
+                        required>
+
+                </div>
+
+                <div class="student-login-field">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+                <button type="submit"
+                        class="student-login-submit-btn">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Login to Student Portal
+
+                </button>
+
+            </form>
+
+            <p class="student-login-register-text">
+
+                Don't have an account?
+
+                <a href="student_register.html">
+                    Register here
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<script src="script.js"></script>
+
+</body>
+</html>

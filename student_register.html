@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="register-page">
+
+<header class="register-hero">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Smart Student Management System</h2>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student_login.html">Student Login</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="register-hero-container">
+
+        <div class="register-intro">
+
+            <p class="register-label">
+                <i class="fa-solid fa-user-graduate"></i>
+                Student Portal
+            </p>
+
+            <h1>Create Your<br>Student Account</h1>
+
+            <p class="register-description">
+                Register securely to access your personal dashboard,
+                profile, classroom allocation, attendance and academic
+                information from one platform.
+            </p>
+
+            <div class="register-benefits">
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Secure student registration
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Automatically generated Student ID
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Personal student dashboard
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Easy room and report access
+                </p>
+
+            </div>
+
+            <a href="index.html" class="register-back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home
+            </a>
+
+        </div>
+
+        <div class="register-panel">
+
+            <div class="register-panel-heading">
+                <i class="fa-solid fa-user-plus"></i>
+
+                <div>
+                    <h2>Student Registration</h2>
+                    <p>Enter your details to create an account.</p>
+                </div>
+            </div>
+
+            <form action="student_register.php"
+                  method="POST"
+                  class="register-form">
+
+                <div class="register-field">
+                    <label for="full_name">Full Name</label>
+                    <input
+                        type="text"
+                        id="full_name"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="register-field">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="register-field">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required>
+                </div>
+
+                <div class="register-field">
+                    <label for="department">Department</label>
+
+                    <select id="department"
+                            name="department"
+                            required>
+
+                        <option value="">Select Department</option>
+                        <option value="BCA (AI & ML)">BCA (AI & ML)</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BSc">BSc</option>
+                        <option value="BCom">BCom</option>
+
+                    </select>
+                </div>
+
+                <div class="register-field">
+                    <label for="year">Year</label>
+
+                    <select id="year"
+                            name="year"
+                            required>
+
+                        <option value="">Select Year</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+
+                    </select>
+                </div>
+
+                <div class="register-field">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        minlength="6"
+                        required>
+                </div>
+
+                <div class="register-field register-full-field">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirm_password"
+                        name="confirm_password"
+                        placeholder="Enter the password again"
+                        minlength="6"
+                        required>
+                </div>
+
+                <button type="submit"
+                        class="register-submit-btn">
+
+                    <i class="fa-solid fa-user-plus"></i>
+                    Create Student Account
+
+                </button>
+
+            </form>
+
+            <p class="register-login-text">
+                Already have an account?
+                <a href="student_login.html">Login here</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body class="admin-register-page">
+
+    <nav class="admin-register-navbar">
+
+        <a href="index.php" class="admin-register-logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <div>
+                <h2>SSMS</h2>
+                <span>Smart Student Management System</span>
+            </div>
+
+        </a>
+
+        <a href="index.php" class="admin-register-home-link">
+
+            <i class="fa-solid fa-house"></i>
+
+            Back to Home
+
+        </a>
+
+    </nav>
+
+    <main class="admin-register-wrapper">
+
+        <section class="admin-register-intro">
+
+            <div class="admin-register-tag">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                Administrator Registration
+
+            </div>
+
+            <h1>
+                Create Your
+                <span>Admin Account</span>
+            </h1>
+
+            <p>
+                Register as an administrator to manage students,
+                attendance, marks, classrooms and academic reports
+                securely from one dashboard.
+            </p>
+
+            <div class="admin-register-features">
+
+                <div class="admin-register-feature">
+
+                    <div class="admin-register-feature-icon">
+
+                        <i class="fa-solid fa-users-gear"></i>
+
+                    </div>
+
+                    <div>
+                        <h3>Manage Students</h3>
+
+                        <p>
+                            Add, update, view and remove student records.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="admin-register-feature">
+
+                    <div class="admin-register-feature-icon">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                    </div>
+
+                    <div>
+                        <h3>Update Academic Data</h3>
+
+                        <p>
+                            Enter attendance, marks and student results.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="admin-register-feature">
+
+                    <div class="admin-register-feature-icon">
+
+                        <i class="fa-solid fa-door-open"></i>
+
+                    </div>
+
+                    <div>
+                        <h3>Control Room Allocation</h3>
+
+                        <p>
+                            Manage classroom availability and schedules.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="admin-register-card">
+
+            <div class="admin-register-card-header">
+
+                <div class="admin-register-main-icon">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                </div>
+
+                <p>Administrator Portal</p>
+
+                <h2>Create Account</h2>
+
+                <span>
+                    Enter your details to register as an administrator.
+                </span>
+
+            </div>
+
+            <form
+                action="admin_register.php"
+                method="POST"
+                class="admin-register-form"
+                id="adminRegisterForm"
+            >
+
+                <div class="admin-register-row">
+
+                    <div class="admin-register-group">
+
+                        <label for="admin_id">
+                            Admin ID
+                        </label>
+
+                        <div class="admin-register-input">
+
+                            <i class="fa-solid fa-id-card"></i>
+
+                            <input
+                                type="text"
+                                id="admin_id"
+                                name="admin_id"
+                                placeholder="Example: ADM001"
+                                maxlength="20"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="admin-register-group">
+
+                        <label for="full_name">
+                            Full Name
+                        </label>
+
+                        <div class="admin-register-input">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="full_name"
+                                name="full_name"
+                                placeholder="Enter full name"
+                                maxlength="100"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="admin-register-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="admin-register-input">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email address"
+                            maxlength="100"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="admin-register-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <div class="admin-register-input">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter 10-digit phone number"
+                            maxlength="10"
+                            pattern="[0-9]{10}"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="admin-register-row">
+
+                    <div class="admin-register-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="admin-register-input">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create password"
+                                minlength="6"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="admin-register-password-toggle"
+                                id="passwordToggle"
+                                aria-label="Show or hide password"
+                            >
+
+                                <i
+                                    class="fa-solid fa-eye"
+                                    id="passwordIcon"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="admin-register-group">
+
+                        <label for="confirm_password">
+                            Confirm Password
+                        </label>
+
+                        <div class="admin-register-input">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <input
+                                type="password"
+                                id="confirm_password"
+                                name="confirm_password"
+                                placeholder="Confirm password"
+                                minlength="6"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="admin-register-password-toggle"
+                                id="confirmPasswordToggle"
+                                aria-label="Show or hide confirm password"
+                            >
+
+                                <i
+                                    class="fa-solid fa-eye"
+                                    id="confirmPasswordIcon"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="admin-register-message"
+                    id="passwordMessage"
+                ></div>
+
+                <button
+                    type="submit"
+                    class="admin-register-submit"
+                >
+
+                    <span>Create Admin Account</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+            <div class="admin-register-security">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <span>
+                    Your password will be securely encrypted before
+                    being stored in the database.
+                </span>
+
+            </div>
+
+            <div class="admin-register-footer">
+
+                <span>Already registered?</span>
+
+                <a href="admin_login.html">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Admin Login
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        const passwordInput =
+            document.getElementById("password");
+
+        const confirmPasswordInput =
+            document.getElementById("confirm_password");
+
+        const passwordToggle =
+            document.getElementById("passwordToggle");
+
+        const confirmPasswordToggle =
+            document.getElementById("confirmPasswordToggle");
+
+        const passwordIcon =
+            document.getElementById("passwordIcon");
+
+        const confirmPasswordIcon =
+            document.getElementById("confirmPasswordIcon");
+
+        const registerForm =
+            document.getElementById("adminRegisterForm");
+
+        const passwordMessage =
+            document.getElementById("passwordMessage");
+
+        passwordToggle.addEventListener("click", function () {
+
+            const isHidden =
+                passwordInput.type === "password";
+
+            passwordInput.type =
+                isHidden ? "text" : "password";
+
+            passwordIcon.classList.toggle(
+                "fa-eye",
+                !isHidden
+            );
+
+            passwordIcon.classList.toggle(
+                "fa-eye-slash",
+                isHidden
+            );
+
+        });
+
+        confirmPasswordToggle.addEventListener("click", function () {
+
+            const isHidden =
+                confirmPasswordInput.type === "password";
+
+            confirmPasswordInput.type =
+                isHidden ? "text" : "password";
+
+            confirmPasswordIcon.classList.toggle(
+                "fa-eye",
+                !isHidden
+            );
+
+            confirmPasswordIcon.classList.toggle(
+                "fa-eye-slash",
+                isHidden
+            );
+
+        });
+
+        registerForm.addEventListener("submit", function (event) {
+
+            if (
+                passwordInput.value !==
+                confirmPasswordInput.value
+            ) {
+
+                event.preventDefault();
+
+                passwordMessage.textContent =
+                    "Passwords do not match.";
+
+                passwordMessage.className =
+                    "admin-register-message error-message";
+
+                confirmPasswordInput.focus();
+
+                return;
+            }
+
+            passwordMessage.textContent =
+                "Passwords matched successfully.";
+
+            passwordMessage.className =
+                "admin-register-message success-message";
+
+        });
+    </script>
+
+</body>
+</html>

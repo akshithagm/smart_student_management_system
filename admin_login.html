@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body class="admin-login-page">
+
+    <nav class="admin-login-navbar">
+
+        <a href="index.php" class="admin-login-logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <div>
+                <h2>SSMS</h2>
+                <span>Smart Student Management System</span>
+            </div>
+
+        </a>
+
+        <a href="index.php" class="admin-home-link">
+
+            <i class="fa-solid fa-house"></i>
+
+            Back to Home
+
+        </a>
+
+    </nav>
+
+    <main class="admin-login-wrapper">
+
+        <section class="admin-login-intro">
+
+            <div class="admin-login-tag">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Secure Administration Portal
+
+            </div>
+
+            <h1>
+                Manage Your Institution
+                <span>Smarter and Faster</span>
+            </h1>
+
+            <p>
+                Access student records, attendance, internal marks,
+                classrooms and room allocations from one secure
+                administration dashboard.
+            </p>
+
+            <div class="admin-login-features">
+
+                <div class="admin-feature-item">
+
+                    <div class="admin-feature-icon">
+
+                        <i class="fa-solid fa-user-graduate"></i>
+
+                    </div>
+
+                    <div>
+                        <h3>Student Management</h3>
+
+                        <p>
+                            Add, edit, view and manage student records.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="admin-feature-item">
+
+                    <div class="admin-feature-icon">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <div>
+                        <h3>Academic Reports</h3>
+
+                        <p>
+                            Update attendance, marks and student results.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="admin-feature-item">
+
+                    <div class="admin-feature-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <div>
+                        <h3>Room Management</h3>
+
+                        <p>
+                            Control classroom availability and allocations.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="admin-login-card">
+
+            <div class="admin-login-card-header">
+
+                <div class="admin-login-main-icon">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                </div>
+
+                <p>Administrator Access</p>
+
+                <h2>Welcome Back</h2>
+
+                <span>
+                    Enter your admin credentials to continue.
+                </span>
+
+            </div>
+
+            <form
+                action="admin_login.php"
+                method="POST"
+                class="admin-login-form"
+            >
+
+                <div class="admin-form-group">
+
+                    <label for="admin_email">
+                        Admin Email
+                    </label>
+
+                    <div class="admin-input-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="admin_email"
+                            name="admin_email"
+                            placeholder="Enter admin email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="admin-form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="admin-input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="admin-password-toggle"
+                            id="adminPasswordToggle"
+                            aria-label="Show or hide password"
+                        >
+
+                            <i
+                                class="fa-solid fa-eye"
+                                id="adminPasswordIcon"
+                            ></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="admin-login-submit-btn"
+                >
+
+                    <span>Login to Dashboard</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+            <div class="admin-login-security">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <span>
+                    This portal is restricted to authorized
+                    administrators only.
+                </span>
+
+            </div>
+
+            <div class="admin-login-footer">
+
+                <a href="student_login.html">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    Student Login
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        const passwordInput =
+            document.getElementById("password");
+
+        const passwordToggle =
+            document.getElementById("adminPasswordToggle");
+
+        const passwordIcon =
+            document.getElementById("adminPasswordIcon");
+
+        passwordToggle.addEventListener("click", function () {
+
+            const isPassword =
+                passwordInput.type === "password";
+
+            passwordInput.type =
+                isPassword ? "text" : "password";
+
+            passwordIcon.classList.toggle(
+                "fa-eye",
+                !isPassword
+            );
+
+            passwordIcon.classList.toggle(
+                "fa-eye-slash",
+                isPassword
+            );
+        });
+    </script>
+
+</body>
+</html>
