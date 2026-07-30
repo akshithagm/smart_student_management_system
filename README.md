@@ -33,8 +33,19 @@ A web-based Student Management System developed using PHP and MySQL. It helps ma
 4. Open phpMyAdmin.
 5. Import `smart_student_management_system.sql`.
 6. Open:
-
 `http://localhost/Smart_Student_Management_System/`
+  
+## 🌐 Live Demo
+
+**Live Website:**
+https://akshithasms.ifree.page/Smart_Student_Management_System/
+## 🚀 Deployment
+
+This project is deployed on InfinityFree and can be accessed using the Live Demo link above.
+## 🔒 Admin Access
+
+The Admin Portal is restricted to authorized administrators only.
+Public users can explore the application, but administrator credentials are not shared for security reasons.
 
 ## 📸 Screenshots
 
